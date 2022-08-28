@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theoretical Yield Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <p>Limiting reagent</p>
+
+  <!-- radio -->
+  <input type="radio" id="massRadio1" name="variables1" checked>
+  <label for="massRadio1">Mass</label>
+
+  <input type="radio" id="molecularweightRadio1" name="variables1">
+  <label for="molecularweightRadio1">Molecular weight</label>
+
+  <input type="radio" id="molesRadio1" name="variables1">
+  <label for="molesRadio1">Moles</label>
+
+  <input type="radio" id="stoichiometryRadio1" name="variables1">
+  <label for="stoichiometryRadio1">Stoichiometry</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v11" id="variable11">Molecular weight</label>
+  <input type="number" id="v11"><br><br>
+  
+  <label for="v21" id="variable21">Moles</label>
+  <input type="number" id="v21"><br><br>
+  
+  <label for="v31" id="variable31">Stoichiometry</label>
+  <input type="number" id="v31"><br><br>
+
+  <button id="btn1">compute</button>
+
+  <p id="result1"></p>
+  
+  <p>Desired product</p>
+  
+  <!-- radio -->
+  <input type="radio" id="molesRadio2" name="variables2" checked>
+  <label for="molesRadio2">Moles</label>
+
+  <input type="radio" id="stoichiometryRadio2" name="variables2">
+  <label for="stoichiometryRadio2">Stoichiometry</label>
+
+  <input type="radio" id="molecularweightRadio2" name="variables2">
+  <label for="molecularweightRadio2">Molecular weight</label>
+
+  <input type="radio" id="theoreticalyieldRadio2" name="variables2">
+  <label for="theoreticalyieldRadio2">Theoretical yield</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v12" id="variable12">Stoichiometry</label>
+  <input type="number" id="v12"><br><br>
+  
+  <label for="v22" id="variable22">Molecular weight</label>
+  <input type="number" id="v22"><br><br>
+  
+  <label for="v32" id="variable32">Theoretical yield</label>
+  <input type="number" id="v32"><br><br>
+
+  <button id="btn2">compute</button>
+
+  <p id="result2"></p>
+  <script src="app.js"></script>
+</body>
+</html>
